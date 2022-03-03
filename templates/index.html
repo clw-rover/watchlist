@@ -1,0 +1,31 @@
+
+<html>
+<head>
+	<title>{{name}}'s watchlist</title>
+	<style>
+	/*
+		p {
+			margin-left: 20%;
+			margin-right: 20%;
+			border: 2px dotted black;
+			padding: 10px 10px 10px 10px;
+			font-family: sans-serif;
+		}	
+	*/
+	</style>
+</head>
+
+<body>
+	<h2>{{name}}'s watchlist</h2>{#	这是一段注释：URL规则过滤器	#}
+
+	<p>total {{movies|length()}} titles</p>
+	<ul>
+		{% for movie in movies %}
+		<li> {{ movie['title'] }}-{{ movie['year'] }} </li>
+		{% endfor %}
+	</ul>
+	<footer>&copy;2022 <a href="http://helloflask.com/tutorial">HelloFlask</a></footer>
+</body>
+</html>
+
+
