@@ -8,7 +8,7 @@ v_movies=[
      {'title':'bilibili2','year':'2018'},
      {'title':'bilibili3','year':'2018'},
      {'title':'bilibili4','year':'2018'},
-     {'title':'bilibili5','year':'2018'},
+     {'title':'bilibili5','year':'2018'}
      ]
 
 @app.route('/')
